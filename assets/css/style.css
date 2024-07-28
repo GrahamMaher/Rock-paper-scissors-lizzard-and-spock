@@ -14,7 +14,7 @@ header, footer{
     color:rgb(255, 127, 127);
     padding: 5px;
 }
-
+/* push footer to bottom of the page as well as style */
 main {
     flex: 1;
     align-items: center;
