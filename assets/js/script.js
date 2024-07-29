@@ -3,13 +3,13 @@ let playerScore = 0;
 let opponentScore = 0;
 
 //  Add event listener for button elements //
-document.querySelector('select').forEach(button => {
+document.querySelectorAll('.select').forEach(button => {
     button.addEventListener('click', () => {
         playGame(button.id);
     });
 });
  // Function calls players choice and the opponents choice to display a result//
-function playGame(playerChoice){
+function playGame(playerChoice) {
     //calls random opponents choice//
     const opponentChoice = getOpponentChoice();
     //compare players choice to opponents choice to give a result//
@@ -20,14 +20,14 @@ function playGame(playerChoice){
 }
 
 // Generate opponents random choice //
-function getOpponentChoice(){
+function getOpponentChoice() {
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
 }
 
 // Set the winning condition combination and show what beats what to display message //
-function getResult(player, opponent){
-    if(player === opponent) return 'Draw, better than a loss!';
+function getResult(player, opponent) {
+    if (player === opponent) return 'Draw, better than a loss!';
 
     const winningCombination = {
         rock: ['lizard', 'scissors'],
@@ -42,20 +42,20 @@ function getResult(player, opponent){
     } else {
         return 'Sorry....loser.';
     }
-};
+}
 
 
 // Update score area based on message returned //
 function updateScores(result) {
-    if (result ===  'Victory!') {
+    if (result === 'Victory!') {
         playerScore++;
-    }else if (result === 'Sorry....loser.') {
+    } else if (result === 'Sorry....loser.') {
         opponentScore++;
     }
-    document.getElementById('your-score').textContent = yourScore;
-    document.getElementById('opponentScore').textContent = opponentScore;
-};
+    document.getElementById('your-score').textContent = playerScore;
+    document.getElementById('opponent-score').textContent = opponentScore;
+}
 
 function displayMessage(message){
     document.getElementById('message').textContent = message;
-};
+}
