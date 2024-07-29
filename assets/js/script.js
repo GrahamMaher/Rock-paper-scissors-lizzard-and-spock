@@ -8,7 +8,7 @@ document.querySelector('select').forEach(button => {
         playGame(button.id);
     });
 });
- // functioin calls players choice and the opponents choice to display a result//
+ // Function calls players choice and the opponents choice to display a result//
 function playGame(playerChoice){
     //calls random opponents choice//
     const opponentChoice = getOpponentChoice();
@@ -19,19 +19,43 @@ function playGame(playerChoice){
     displayMessage(`You chose ${playerChoice}, opponent chose ${opponentChoice}. ${result}`);
 }
 
+// Generate opponents random choice //
 function getOpponentChoice(){
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
 }
 
-function getResult(){
+// Set the winning condition combination and show what beats what to display message //
+function getResult(player, opponent){
+    if(player === opponent) return 'Draw, better than a loss!';
 
-}
+    const winningCombination = {
+        rock: ['lizard', 'scissors'],
+        paper: ['rock', 'spock'],
+        scissors: ['paper', 'lizard'],
+        lizard: ['paper', 'spock'],
+        spock: ['rock', 'scissors']
+    };
 
-function updateScores(){
+    if (winningCombination[player].includes(opponent)) {
+        return 'Victory!';
+    } else {
+        return 'Sorry....loser.';
+    }
+};
 
-}
 
-function displayMessage(){
+// Update score area based on message returned //
+function updateScores(result) {
+    if (result ===  'Victory!') {
+        playerScore++;
+    }else if (result === 'Sorry....loser.') {
+        opponentScore++;
+    }
+    document.getElementById('your-score').textContent = yourScore;
+    document.getElementById('opponentScore').textContent = opponentScore;
+};
 
-}
+function displayMessage(message){
+    document.getElementById('message').textContent = message;
+};
