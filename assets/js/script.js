@@ -3,6 +3,9 @@
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 let playerScore = 0;
 let opponentScore = 0;
+let triesLeft = 5;
+let history = [];
+let levelDifficulty = 1;
 
 //  Add event listener for button elements //
 document.querySelectorAll('.select').forEach(button => {
@@ -14,6 +17,10 @@ document.querySelectorAll('.select').forEach(button => {
 
 // Function calls players choice and the opponents choice to display a result//
 function playGame(playerChoice) {
+    if (triesLeft === 0){
+        gameOver();
+        return;
+    }
 
     const opponentChoice = getOpponentChoice();
 
@@ -21,6 +28,13 @@ function playGame(playerChoice) {
 
     updateScores(result);
     displayMessage(`You chose ${playerChoice}, Opponent chose ${opponentChoice}. ${result}`);
+    history.push(playerChoice);
+    triesLeft--;
+    document.getElementById('tries-left').textContent = triesLeft;
+
+    if (triesLeft === 0) {
+        gameOver();
+    }
 }
 
 // Generate opponents random choice //
