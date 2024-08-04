@@ -3,7 +3,7 @@
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 let playerScore = 0;
 let opponentScore = 0;
-let triesLeft = 5;
+let roundsLeft = 5;
 let history = [];
 let levelDifficulty = 1;
 
@@ -15,9 +15,9 @@ document.querySelectorAll('.select').forEach(button => {
 });
 
 
-// Function calls players choice and the opponents choice to display a result//
+// Function calls players choice and the opponents choice to display a result, counts down number of rounds left to GameOver//
 function playGame(playerChoice) {
-    if (triesLeft === 0){
+    if (roundsLeft === 0){
         gameOver();
         return;
     }
@@ -29,11 +29,25 @@ function playGame(playerChoice) {
     updateScores(result);
     displayMessage(`You chose ${playerChoice}, Opponent chose ${opponentChoice}. ${result}`);
     history.push(playerChoice);
-    triesLeft--;
-    document.getElementById('tries-left').textContent = triesLeft;
+    roundsLeft--;
+    document.getElementById('rounds-left').textContent = roundsLeft;
 
-    if (triesLeft === 0) {
+    if (roundsLeft === 0) {
         gameOver();
+    }
+}
+
+function increasedDifficulty {
+    if (history.length === 0) return choices[Math.floor(Math.random() * choices.length)];
+
+    const previousGuess = history[history.length - 1];
+    switch(previousGuess) {
+        case 'rock' : return 'paper';
+        case 'paper' : return 'scissors';
+        case 'scissors' : return 'rock';
+        case 'lizard' : return 'spock';
+        case 'spock' : return 'lizard'
+        default: return choices[Math.floor(Math.random() * choices.length)];
     }
 }
 
