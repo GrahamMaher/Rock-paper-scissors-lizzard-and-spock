@@ -8,6 +8,8 @@ document.querySelectorAll('.select').forEach(button => {
         playGame(button.id);
     });
 });
+
+
  // Function calls players choice and the opponents choice to display a result//
 function playGame(playerChoice) {
     

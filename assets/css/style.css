@@ -39,11 +39,13 @@ main {
     margin: 1em;
 }
 
+/* Style result message */
 #message {
     font-family: 'Gupter', sans-serif;
     font-size: 2em;
 }
 
+/* Style buttons */
 .select {
     height: 50px;
     width: 90px;
@@ -51,6 +53,7 @@ main {
     margin-bottom: 5px;
 }
 
+/* Media query to adjust style for screens larger than 768px */
 @media screen and (min-width: 768px) {
     .select {
         height: 80px;
