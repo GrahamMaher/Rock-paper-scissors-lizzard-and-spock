@@ -17,6 +17,22 @@ The following is a website created for Project Portfolio 2 of the Code Institute
     - [Imagery](#imagery)
     - [Message Font](#message-font)
     - [Back-up Fonts](#back-up-fonts)
+6. [Features](#features)
+    - [Choice Buttons](#choice-buttons)
+    - [Difficulty Level](#difficulty-level)
+    - [Gameover message](#game-over-message)
+7. [Technologies and tools used](#technologies-and-tools-used)
+8. [Testing](#testing)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [JS Validation](#js-validation)
+    - [Google dev tool Lighthouse](#google-dev-tool-lighthouse)
+        - [Desktop](#desktop)
+        - [Mobile](#mobile)
+9. [Deployment](#deployment)
+10. [Bugs](#bugs)
+11. [Credits and Acknowlegements](#credits-and-acknowlegements)
+
 
 # Overview
 Rock, Paper, Scissors, Lizard, Spock is a game created for project potfolio 2.
