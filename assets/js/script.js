@@ -37,7 +37,7 @@ function playGame(playerChoice) {
     }
 }
 
-function increasedDifficulty {
+function increasedDifficulty() {
     if (history.length === 0) return choices[Math.floor(Math.random() * choices.length)];
 
     const previousGuess = history[history.length - 1];
@@ -53,8 +53,12 @@ function increasedDifficulty {
 
 // Generate opponents random choice //
 function getOpponentChoice() {
-    const randomIndex = Math.floor(Math.random() * choices.length);
-    return choices[randomIndex];
+    if (levelDifficulty === 1){
+     return choices[Math.floor(Math.random() * choices.length)];
+    } else {
+        return increasedDifficulty();
+    }
+    
 }
 
 // Set the winning condition combination and show what beats what to display message //
@@ -90,4 +94,9 @@ function updateScores(result) {
 
 function displayMessage(message) {
     document.getElementById('message').textContent = message;
+}
+
+function gameOver() {
+    let finalMessage = playerScore > opponentScore ? 'You win!' : 'You lose!';
+    displayMessage(finalMessage);
 }
