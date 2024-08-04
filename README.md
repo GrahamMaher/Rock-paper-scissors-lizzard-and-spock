@@ -2,11 +2,21 @@
 
 The following is a website created for Project Portfolio 2 of the Code Institute L5 programme, it is made using the the idea from Code Institute and consists of playing a game of rock, paper, scissors, lizard, spock against the computer with the scores being shown at the bottom.
 
-![Responsive Test](assets/test-images/am-i-responsive.png)
+![Responsive Test](<assets/test-images/am-i-responsive.png>)
 
 # [Live web page](https://grahammaher.github.io/Rock-paper-scissors-lizzard-and-spock/)
 
 # Table of Contents
+1. [Rock,Paper,Scissors,Lizard,Spock](#rock-paper-scrissors-lizard-spock)
+2. [Launch the website](#live-web-page)
+3. [Overview](#overview)
+4. [Planning](#planning)
+5. [Design](#design)
+    - [Header and Footer](#header--footer)
+    - [Colours](#colours)
+    - [Imagery](#imagery)
+    - [Message Font](#message-font)
+    - [Back-up Fonts](#back-up-fonts)
 
 # Overview
 Rock, Paper, Scissors, Lizard, Spock is a game created for project potfolio 2.
@@ -77,7 +87,36 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
 
  ## Google dev tool Lighthouse
   ### Desktop
-   <img src="assets/test-images/desktop-lighthouse-test.png>
+   <img src="assets/test-images/desktop-lighthouse-test.png">
 
   ### Mobile
-   <img src="assets/test-images/mobile-lighthouse-test.png>  
+   <img src="assets/test-images/mobile-lighthouse-test.png">  
+
+# Deployment
+ ## Deploy through Github Repositiory
+ ### Steps
+ -[Repository](https://github.com/GrahamMaher/Rock-paper-scissors-lizzard-and-spock)
+ 1. Click on repository you would like to deploy.
+ 2. Go to settings tab top left of the page in the nav menu.
+ 3. Select pages
+ 4. Under Build and Deployment select source- deploy from branch
+ 5. Under branch select-main
+ 6. Under folder select root and click save.
+ 7. Top of the page will now state that your page is now live and will give you the icon to launch your website.
+
+# Bugs
+  - Title error given under HTML validation, removed duplicate title element.
+  - Syntax errors corrected
+  - Missing semi-colons
+  - gameOver message not displaying, add quatations marks
+  - Opponents score not increasing, add () after function
+  - All known bugs have been corrected
+
+# Credits and Acknowlegements
+  - Kera Cudamore https://github.com/kera-cudmore/readme-examples?tab=readme-ov-file#how-to-write-your-readme -Readme tips and tricks
+  - Slack community
+  - Build Rock Paper Scissors Game with Vanilla JavaScript for Beginners (HTML, CSS, JS)s Clever Programmer https://www.youtube.com/watch?v=tzjF8LkfWfc - basic ideas
+  - https://stackoverflow.com/questions/64712803/change-game-difficulty-javascript - information on increasing difficulty levels
+  - https://forum.freecodecamp.org/t/rock-paper-and-scissors/656175 - code information
+  - Code Institute Love Maths walkthrough project - Basic ideas and guidance
+  - My previous project Trout Fishing Haven - Information on Readme files
