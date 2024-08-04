@@ -10,13 +10,13 @@ document.querySelectorAll('.select').forEach(button => {
 });
 
 
- // Function calls players choice and the opponents choice to display a result//
+// Function calls players choice and the opponents choice to display a result//
 function playGame(playerChoice) {
-    
+
     const opponentChoice = getOpponentChoice();
-    
+
     const result = getResult(playerChoice, opponentChoice);
-    
+
     updateScores(result);
     displayMessage(`You chose ${playerChoice}, Opponent chose ${opponentChoice}. ${result}`);
 }
@@ -58,6 +58,6 @@ function updateScores(result) {
     document.getElementById('opponent-score').textContent = opponentScore;
 }
 
-function displayMessage(message){
+function displayMessage(message) {
     document.getElementById('message').textContent = message;
 }
