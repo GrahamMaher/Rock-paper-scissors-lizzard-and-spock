@@ -10,13 +10,13 @@ document.querySelectorAll('.select').forEach(button => {
 });
  // Function calls players choice and the opponents choice to display a result//
 function playGame(playerChoice) {
-    //calls random opponents choice//
+    
     const opponentChoice = getOpponentChoice();
-    //compare players choice to opponents choice to give a result//
+    
     const result = getResult(playerChoice, opponentChoice);
-    //function updates the score based on the result//
+    
     updateScores(result);
-    displayMessage(`You chose ${playerChoice}, opponent chose ${opponentChoice}. ${result}`);
+    displayMessage(`You chose ${playerChoice}, Opponent chose ${opponentChoice}. ${result}`);
 }
 
 // Generate opponents random choice //
@@ -40,7 +40,7 @@ function getResult(player, opponent) {
     if (winningCombination[player].includes(opponent)) {
         return 'Victory!';
     } else {
-        return 'Sorry....loser.';
+        return 'Sorry....Loser!';
     }
 }
 
@@ -49,7 +49,7 @@ function getResult(player, opponent) {
 function updateScores(result) {
     if (result === 'Victory!') {
         playerScore++;
-    } else if (result === 'Sorry....loser.') {
+    } else if (result === 'Sorry....Loser!') {
         opponentScore++;
     }
     document.getElementById('your-score').textContent = playerScore;
