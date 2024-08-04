@@ -98,7 +98,7 @@ function displayMessage(message) {
     document.getElementById('message').textContent = message;
 }
 
-// Display final message after rounds = 0 //
+// Display final message when rounds = 0 //
 function gameOver() {
     let finalMessage = playerScore > opponentScore ? 'You win!' : 'You lose!';
     displayMessage(finalMessage);
