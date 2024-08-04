@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 let playerScore = 0;
 let opponentScore = 0;
