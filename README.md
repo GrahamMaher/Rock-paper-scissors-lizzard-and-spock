@@ -38,7 +38,12 @@ The following is a website created for Project Portfolio 2 of the Code Institute
 Rock, Paper, Scissors, Lizard, Spock is a game created for project potfolio 2.
 The website was created to show the use and understanding of JavaScript.
 It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will created a random choice to respond to the choice that you, the user has chosen. Based on the parameters stated in the JavaScript function it was either show a victory or a loss, based on this outcome the score will be captured and displayed at the bottom of the page under the scores heading.
-
+  ## Goals
+   ### External User
+   - The site’s users want to play an online game that has elements of chance. 
+   ### Site owner
+   - The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users. 
+   
 # Planning
   ## Wireframes
   <details closed>
