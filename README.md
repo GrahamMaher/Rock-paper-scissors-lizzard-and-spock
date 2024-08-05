@@ -70,7 +70,7 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
 
 # Features
  - ## Choice Buttons
-    <img src="assets/test-images/choice-buttons.png">
+    - <img src="assets/test-images/choice-buttons.png">
     - eventListener is used on the buttons based off of the click on the button selected, calling the functions into action, logging your choice and the opponents random choice.
  - ## Difficulty Level
    - Functions remember previous result and choice and will choose next round choice based off of that.
@@ -154,4 +154,4 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
   - https://forum.freecodecamp.org/t/rock-paper-and-scissors/656175 - code information
   - Code Institute Love Maths walkthrough project - Basic ideas and guidance
   - My previous project Trout Fishing Haven - Information on Readme files
-  - Wikihow https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock#:~:text=Scissors%20cuts%20paper%2C%20paper%20covers,same%20signal%2C%20it's%20a%20tie.-Rules on how to play
+  - Wikihow https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock#:~:text=Scissors%20cuts%20paper%2C%20paper%20covers,same%20signal%2C%20it's%20a%20tie. -Rules on how to play
