@@ -124,7 +124,7 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
   - Title error given under HTML validation, removed duplicate title element.
   - Syntax errors corrected
   - Missing semi-colons
-  - gameOver message not displaying, add quatations marks
+  - gameOver message not displaying, add quotations marks
   - Opponents score not increasing, add () after function
   - All known bugs have been corrected
 
