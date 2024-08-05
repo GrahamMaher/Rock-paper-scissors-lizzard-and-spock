@@ -43,7 +43,7 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
    - The site’s users want to play an online game that has elements of chance. 
    ### Site owner
    - The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users. 
-   
+
 # Planning
   ## Wireframes
   <details closed>
@@ -70,11 +70,24 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
 
 # Features
  - ## Choice Buttons
-   eventListener is used on the buttons based off of the click on the button selected, calling the functions into action, logging your choice and the opponents random choice.
+    <img src="assets/test-images/choice-buttons.png">
+    - eventListener is used on the buttons based off of the click on the button selected, calling the functions into action, logging your choice and the opponents random choice.
  - ## Difficulty Level
-   Functions remember previous result and choice and will choose next round choice based off of that.
+   - Functions remember previous result and choice and will choose next round choice based off of that.
+ - ## Messages
+    - <img src="assets/test-images/game-messages.png">
+    - <img src="assets/test-images/message-change.png">
+    - <img src="assets/test-images/loss-message.png">
+    - <img src="assets/test-images/victory-message.png">
+    -  Messages change with each decision made.
+ - ## Score area
+    - <img src="assets/test-images/game-area.png">
+    - <img src="assets/test-images/score-area-update.png">
+    - Score area updates throughout game.
  - ## Game Over message
-   End of game message will display either victory or defeat based on scores at the end of the allocated turns.
+    - <img src="assets/test-images/game-over.png">
+    - <img src="assets/test-images/win-gameover.png">
+    - End of game message will display either victory or defeat based on scores at the end of the allocated turns.
 
 
 # Technologies and tools used
@@ -126,12 +139,12 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
  7. Top of the page will now state that your page is now live and will give you the icon to launch your website.
 
 # Bugs
-  - Title error given under HTML validation, removed duplicate title element.
-  - Syntax errors corrected
-  - Missing semi-colons
-  - gameOver message not displaying, add quotations marks
-  - Opponents score not increasing, add () after function
-  - All known bugs have been corrected
+  - Title error given under HTML validation, removed duplicate title element.-Fixed
+  - Syntax errors corrected-Fixed
+  - Missing semi-colons-Fixed
+  - gameOver message not displaying, add quotations marks-Fixed
+  - Opponents score not increasing, add () after function-Fixed
+  - After game over,game does not reset, must refresh browser-Unfixed
 
 # Credits and Acknowlegements
   - Kera Cudamore https://github.com/kera-cudmore/readme-examples?tab=readme-ov-file#how-to-write-your-readme -Readme tips and tricks
@@ -141,3 +154,4 @@ It is a game of Rock, Paper, Scissors, Lizard, Spock vs the computer and will cr
   - https://forum.freecodecamp.org/t/rock-paper-and-scissors/656175 - code information
   - Code Institute Love Maths walkthrough project - Basic ideas and guidance
   - My previous project Trout Fishing Haven - Information on Readme files
+  - Wikihow https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock#:~:text=Scissors%20cuts%20paper%2C%20paper%20covers,same%20signal%2C%20it's%20a%20tie.-Rules on how to play

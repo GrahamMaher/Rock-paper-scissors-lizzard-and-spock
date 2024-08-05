@@ -25,26 +25,50 @@ footer {
     padding: 5px;
 }
 
+footer {
+    margin-top: auto;
+}
+
 /* Push footer to bottom of the page as well as style */
 main {
     flex: 1 0 auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+/* Style rules area */
+#rules {
+    background-color: antiquewhite;
+    padding: 1.5em;
+    width: 80%;
+    max-width: 550px;
+    margin-bottom: 2em;
+    font-family: 'Gupter', sans-serif;
+    font-size: 20px;
+}
+
+#rules h2 {
+    text-decoration: underline;
 }
 
 #game-area {
     background-color: lightgray;
     border-radius: 2em;
     padding: 2em;
-    height: 400px;
+    height: 500px;
     margin: 1em;
+    width: 80%;
+    max-width: 550px;
 }
 
 /* Style result message */
 #message {
     font-family: 'Gupter', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 /* Style buttons */
@@ -61,5 +85,8 @@ main {
         height: 80px;
         font-size: 25px;
         width: 150px;
+    }
+    #message{
+        font-size: 2em;
     }
 }
